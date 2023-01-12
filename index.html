@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estil.css">
+        <script type="text/javascript" src="./script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&family=Montserrat+Alternates:wght@300&family=Orbitron:wght@500&family=Passions+Conflict&display=swap" rel="stylesheet">
+        <title>web-Enigma</title>
+
+    </head>
+
+    <div class="container">
+
+        <header class="cabecera">
+
+            <div class="logocabecera">
+                <img src="./svgeimageschima/Logo.svg" alt="Logo Alura"  class="logo">  
+            </div>
+
+            <div class="titulocabecera">
+                <h1> Cifrador de textos </h1>
+            </div>
+
+        </header>
+
+        <section class="principal">
+
+            <div class="ontextoriginal">
+                <textarea type="text" id="entrada" rows="20" placeholder="Escribe aquí el texto que deseas cifrar"></textarea>
+                <h1 class="avisominusculas">¡ Introduce preferentenmente minúsculas sin tildes !</h1>
+            </div>
+
+            <div class="pushcifradescifra">
+                <input type="button"  id="hace" value="Cifrar" onclick="encriptar()">
+                <input type="button"  id="deshace" value="Descifrar" onclick="desencriptar()">
+            </div> 
+        
+        </section>
+
+        <aside class="rightside">
+
+            <div class="graficomuneco">
+                <img src="./svgeimageschima/nicola.png" alt="Nicola Sirkis" id="nicola">
+            </div>
+
+            <h2 id="mensajesalida">¡ Ningún mensaje fue encontrado !</h2>
+            
+            <div class="offtextmodified">
+                <textarea id="salida"  rows="6" placeholder="Aquí tendras el resultado"></textarea>
+            </div>
+            
+            <div class="pushcopy">
+                <input type="button"  id="replica" value="Copiar" onclick="copiar()">
+            </div>
+
+            <div id="contacto">
+
+                <h4 class="redes">Contactos</h4>
+
+                <div id="hipervinculos">
+                    <a href="https://www.linkedin.com/in/giancarloisma/"> <img src="./svgeimageschima/linke.svg" alt="Linkedin" class="link"> </a></li>
+                    <a href="https://twitter.com/GiancarloIsma?t=2pPL6_HGPdW8eFGnIa_swg&s=08 "><img src="./svgeimageschima/twitter.svg" alt="Twitter" class="twitt"></a>  
+                    <a href="https://github.com/GiancaIsma"><img src="./svgeimageschima/github.svg" alt="GitHub" class="gith"></a>
+                    <a href="https://api.whatsapp.com/send?phone=51973142137"><img src="./svgeimageschima/whatsapp.svg" alt="whatsapp" class="wapp"></a>     
+                </div>
+
+            </div>    
+            
+            
+            
+            
+        </aside>
+        
+        <footer class="piepagina">
+
+            <h3> &copy Derechos reservados ALURA</h3>
+
+        </footer>
+
+    </div>
+
+</html>
+
